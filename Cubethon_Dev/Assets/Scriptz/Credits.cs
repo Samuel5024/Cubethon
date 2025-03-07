@@ -1,10 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Credits : MonoBehaviour
 {
-    public void Quit()
+    public void Restart()
     {
-        Debug.Log("I quit!");
-        Application.Quit();
+        SceneManager.LoadScene(0);
     }
 }
